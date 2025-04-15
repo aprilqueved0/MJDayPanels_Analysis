@@ -1,0 +1,14 @@
+import json
+
+# Create a Python dictionary
+data = {
+    "year": "2019",
+    "semester": "spring",
+    "time": "10am", "10am",
+    "student": "Lindsay Huth", "Brooks DuBose",
+    "panelists": ["Sean Mussenden", "Sandy Banisky", "Ira Chinoy", "Angela Wong (alum)", Kevin Blackistone, Karen Denny, Christine Harvey, Alexander Pyles (alum)]
+}
+
+# Write to a JSON file
+with open("data.json", "w") as json_file:
+    json.dump(data, json_file, indent=4)  # `indent` makes it pretty
