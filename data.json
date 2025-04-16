@@ -1,11 +1,11 @@
 {
     "2019": {
         "spring": {
-            "time slot": [
+            "time_slot": [
                 "10:00 a.m.",
                 "10:00 a.m."
             ],
-            "students": [
+            "student": [
                 "Lindsay Huth",
                 "Brooks DuBose"
             ],
@@ -21,7 +21,7 @@
             ]
         },
         "fall": {
-            "time slot": [
+            "time_slot": [
                 "10:00 a.m.",
                 "10:00 a.m.",
                 "11:00 a.m.",
@@ -33,7 +33,7 @@
                 "2:00 p.m.",
                 "3:00 p.m."
             ],
-            "students": [
+            "student": [
                 "Emily Top",
                 "Hannah Gaskill",
                 "Horus Alas",
@@ -91,7 +91,7 @@
     },
     "2020": {
         "spring": {
-            "time slot": [
+            "time_slot": [
                 "10:00 a.m.",
                 "10:00 a.m.",
                 "10:00 a.m.",
@@ -102,7 +102,7 @@
                 "1:00 p.m.",
                 "2:00 p.m."
             ],
-            "students": [
+            "student": [
                 "amal Williams",
                 "Camila Velloso",
                 "Mike Revollo",
@@ -153,7 +153,7 @@
             ]
         },
         "fall": {
-            "time slot": [
+            "time_slot": [
                 "1:00 p.m.",
                 "9:00 a.m.",
                 "8:00 a.m.",
@@ -163,7 +163,7 @@
                 "10:00 a.m.",
                 "12:00 p.m."
             ],
-            "students": [
+            "student": [
                 "Kelsey Mannix",
                 "Maya Pottiger",
                 "Bryan Gallion",
@@ -236,7 +236,7 @@
     },
     "2021": {
         "spring": {
-            "time slot": [
+            "time_slot": [
                 "9:00 a.m.",
                 "10:00 a.m.",
                 "9:00 a.m.",
@@ -255,7 +255,7 @@
                 "1:00 p.m.",
                 "2:00 p.m."
             ],
-            "students": [
+            "student": [
                 "Sydney Clark",
                 "Luciana Perez Uribe",
                 "Philip Van Slooten",
@@ -345,7 +345,7 @@
             ]
         },
         "fall": {
-            "time slot": [
+            "time_slot": [
                 "1:00 p.m.",
                 "9:00 a.m.",
                 "8:00 a.m.",
@@ -355,7 +355,7 @@
                 "10:00 a.m.",
                 "12:00 p.m."
             ],
-            "students": [
+            "student": [
                 "Julia Arbutus",
                 "Natalie Hays Drum",
                 "Brittany Gaddy",
@@ -403,7 +403,7 @@
     },
     "2022": {
         "spring": {
-            "time slot": [
+            "time_slot": [
                 "9:00 a.m.",
                 "9:00 a.m.",
                 "9:00 a.m.",
@@ -416,7 +416,7 @@
                 "9:00 a.m.",
                 "10:00 a.m."
             ],
-            "students": [
+            "student": [
                 "Rachel Logan",
                 "Jon White",
                 "Ashkan Motamedi",
@@ -477,7 +477,7 @@
             ]
         },
         "fall": {
-            "time slot": [
+            "time_slot": [
                 "9:00 a.m.",
                 "9:00 a.m.",
                 "10:00 a.m.",
@@ -494,7 +494,7 @@
                 "3:00 p.m.",
                 "9:30 a.m."
             ],
-            "students": [
+            "student": [
                 "Deanna Giles",
                 "Emmett Gartner",
                 "Markayla Brooks",
@@ -576,7 +576,7 @@
     },
     "2023": {
         "spring": {
-            "time slot": [
+            "time_slot": [
                 "8:00 a.m.",
                 "9:00 a.m.",
                 "10:00 a.m.",
@@ -589,7 +589,7 @@
                 "2:00 p.m.",
                 "3:00 p.m."
             ],
-            "students": [
+            "student": [
                 "Stephen Neukam",
                 "Michael Charles",
                 "Jon Meltzer",
@@ -651,7 +651,7 @@
             ]
         },
         "fall": {
-            "time slot": [
+            "time_slot": [
                 "9:00 a.m.",
                 "9:00 a.m.",
                 "10:00 a.m.",
@@ -665,7 +665,7 @@
                 "4:00 p.m.",
                 "9:00 a.m."
             ],
-            "students": [
+            "student": [
                 "Jessica Schwartz",
                 "Jamille Whitlow",
                 "Carl McManus",
@@ -733,7 +733,7 @@
     },
     "2024": {
         "spring": {
-            "time slot": [
+            "time_slot": [
                 "10:00 a.m.",
                 "10:00 a.m.",
                 "10:00 a.m.",
@@ -743,7 +743,7 @@
                 "2:00 p.m.",
                 "3:00 p.m."
             ],
-            "students": [
+            "student": [
                 "Lisa Woelfl",
                 "Sununu Bah",
                 "Caroline Koutsos",
@@ -789,7 +789,7 @@
             ]
         },
         "fall": {
-            "time slot": [
+            "time_slot": [
                 "9:00 a.m.",
                 "10:00 a.m.",
                 "11:00 a.m.",
@@ -800,7 +800,7 @@
                 "2:00 p.m.",
                 "2:00 p.m."
             ],
-            "students": [
+            "student": [
                 "Caley Fox Shannon",
                 "Steven Jacobs",
                 "Imani Agbionu",
@@ -853,7 +853,7 @@
     },
     "2025": {
         "spring": {
-            "time slot": [
+            "time_slot": [
                 "9:00 a.m.",
                 "10:00 a.m.",
                 "10:00 a.m.",
@@ -867,7 +867,7 @@
                 "1:00 p.m.",
                 "3:00 p.m."
             ],
-            "students": [
+            "student": [
                 "Taylor Nichols",
                 "April Quevedo",
                 "Keelin Brown",
