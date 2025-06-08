@@ -1,15 +1,16 @@
 import json
 import csv
 
-# Helper function to determine panelist category
+def clean_panelist(name):
+    return name.replace(" (alum)", "").replace(" (Alum)", "").strip()
+
 def get_category(name):
-    return "Alum" if "(alum)" in name.lower() or "(alum)" in name else "Faculty"
+    return "Alum" if "(alum)" in name.lower() else "Faculty"
 
 # Load data
 with open("data.json", "r") as f:
     data = json.load(f)
 
-# Prepare rows
 rows = []
 
 for year, semesters in data.items():
@@ -17,24 +18,33 @@ for year, semesters in data.items():
         term = f"{semester.capitalize()} {year}"
         students = content.get("student", [])
         panelists = content.get("panelists", [])
-        
-        for panelist in panelists:
-            category = get_category(panelist)
-            for student in students:
+
+        panel_groups = []
+        current_panel = []
+
+        for p in panelists:
+            current_panel.append(p)
+            if "(alum)" in p.lower():
+                panel_groups.append(current_panel)
+                current_panel = []
+
+        # Match each panel group to each student in order
+        for student, panel_group in zip(students, panel_groups):
+            for panelist in panel_group:
                 rows.append({
                     "Year": year,
                     "Term": term,
-                    "Panelist": panelist.replace(" (alum)", "").replace(" (Alum)", ""),
-                    "Category": category,
+                    "Panelist": clean_panelist(panelist),
+                    "Category": get_category(panelist),
                     "Student": student
                 })
 
 # Write to CSV
-with open("panelist_student_long_format.csv", "w", newline="", encoding="utf-8") as csvfile:
+with open("panelists_by_student.csv", "w", newline="", encoding="utf-8") as csvfile:
     fieldnames = ["Year", "Term", "Panelist", "Category", "Student"]
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
     writer.writeheader()
     writer.writerows(rows)
 
-print("CSV file 'panelist_student_long_format.csv' has been created.")
+print("✅ CSV created using alum-based panel boundaries.")
